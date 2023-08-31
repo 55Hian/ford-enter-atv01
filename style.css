@@ -2,6 +2,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #f8f8f2;
     background-color: #282a36;
+    text-align: center;
+    align-items: center;
 }
 
 html {
@@ -23,4 +25,8 @@ h3{
 a{
     text-decoration: none;
     color: #fcae11;
+}
+
+ul{
+    list-style-type: none;
 }
