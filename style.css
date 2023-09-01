@@ -1,13 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     color: #f8f8f2;
-    background-color: #282a36;
+    background-color: #282a36; 
     text-align: center;
     align-items: center;
 }
 
 html {
-    scroll-behavior: smooth; /*Comportamento-scroll: suave */
+    scroll-behavior: smooth; 
+    
 }
 
 h1 {
@@ -30,3 +67,4 @@ a{
 ul{
     list-style-type: none;
 }
+*/
