@@ -1,12 +1,82 @@
-h1 {
-    color: #ff5555;
-    line-height: 2;
+html{
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #282a36;
+    margin: 25px 50px;
+    text-align: justify;
+}
+
+.titulo-da-pagina{
+   color:#ff5555;
+   line-height: 3;
+   font-weight: bold;
+   font-size: 24pt; 
+}
+
+.titulo-de-artigo{
+    color: #ff79c6;
+    line-height: 3;
     font-weight: bold;
     font-size: 22pt;
 }
 
+.sub-titulo{
+    color: #bd93f9;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 20pt;
+    font-style: italic;
+    margin-bottom: 10px;
+}
 
+.voltar-ao-inicio{
+    color: #fcae11;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 15pt;
+}
 
+.caminhos{
+    color: #fcae11;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.link-externo{
+    color: #fcae11;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.paragrafro-de-artigo{
+    background-color: #44475a;
+    padding: 20px;
+}
+
+p{
+    background-color: #44475a;
+    color: #6272a4;
+    line-height: 1.5;
+    font-size: 15pt;
+    padding: 20px;
+}
+
+figure{
+    background-color: white;
+    text-align: center;
+}
+
+article{
+    margin: 20px 0px;
+    border: 4px solid #ff5555;
+    padding: 20px;
+    border-radius: 25px;
+}
 
 /*
 
