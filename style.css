@@ -24,6 +24,7 @@ body{
    line-height: 3;
    font-weight: bold;
    font-size: 24pt; 
+   text-align: center;
 }
 
 .titulo-de-artigo{
@@ -31,9 +32,10 @@ body{
     line-height: 3;
     font-weight: bold;
     font-size: 22pt;
+    text-align: center;
 }
 
-.sub-titulo{
+.sub-titulo, #faq summary{
     color: #bd93f9;
     line-height: 2;
     font-weight: bold;
@@ -42,15 +44,20 @@ body{
     margin-bottom: 10px;
 }
 
-.voltar-ao-inicio{
+.voltar-ao-inicio a{
     color: #fcae11;
     line-height: 2;
     font-weight: bold;
-    font-size: 15pt;
+    font-size: 15pt; 
+    justify-content: center;
+    display: flex;
 }
 
 .menu-principal ul{
     background-color: var(--cor-fundo-secundaria);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .menu-principal a{
@@ -59,18 +66,8 @@ body{
 
 .menu-principal li{
     margin: 20px 10px;
+    display: inline;
 }
-
-.paragrafo-blockquote + p{
-    padding-top: 0px;   
-}
-/*.caminhos{
-    color: #fcae11;
-    line-height: 2;
-    font-weight: bold;
-    font-size: 15pt;
-}
-*/
 
 .caminhos:hover{
     text-decoration: overline ;
@@ -96,14 +93,34 @@ p{
     padding: 20px;
 }
 
+.paragrafo-blockquote + p{
+    padding-top: 0px;   
+}
+
+#tags-utlizadas p:first-of-type{
+    border-radius: 25px 0px 0px 0px;
+}
+
+#tags-utlizadas p:last-of-type{
+    border-radius: 0px 0px 25px 0px;
+}
+
+#tags-utlizadas p:only-of-type{
+    border-radius: 25px 0 25px 0;
+}
+
 figure{
     background-color: white;
     text-align: center;
 }
 
+#tags-utlizadas figure{
+    background-color: transparent;
+    margin: 20px 0px;
+}
+
 img{
     width: 15vw;
-
 }
 
 article{
@@ -113,38 +130,12 @@ article{
     border-radius: 25px;
 }
 
-
-/*
-
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    color: #f8f8f2;
-    background-color: #282a36; 
-    text-align: center;
-    align-items: center;
+a:active{
+    color:var(--cor-primaria);
 }
 
-html {
-    scroll-behavior: smooth; 
-    
+a:hover{
+    text-decoration: overline;
+    color: var(--cor-quartenaria);
+    font-weight: 700;
 }
-
-
-
-h2 {
-    color: #ff79c6;
-}
-
-h3{
-    color: #bd93f9
-}
-
-a{
-    text-decoration: none;
-    color: #fcae11;
-}
-
-ul{
-    list-style-type: none;
-}
-*/
