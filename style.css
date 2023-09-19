@@ -29,7 +29,7 @@ body{
 
 .titulo-de-artigo{
     color: #ff79c6;
-    line-height: 3;
+    line-height: 2;
     font-weight: bold;
     font-size: 22pt;
     text-align: center;
@@ -57,7 +57,10 @@ body{
     background-color: var(--cor-fundo-secundaria);
     padding: 15px;
     border-radius: 15px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .menu-principal a{
@@ -66,7 +69,7 @@ body{
 
 .menu-principal li{
     margin: 20px 10px;
-    display: inline;
+    /* display: inline; */
 }
 
 .caminhos:hover{
@@ -138,4 +141,42 @@ a:hover{
     text-decoration: overline;
     color: var(--cor-quartenaria);
     font-weight: 700;
+}
+
+section#coisas{
+    display: flex;
+    flex-direction: row;
+}
+
+section#coisas2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section#coisas3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#coisas4{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+section#coisas-colunas{
+    display: flex;
+    flex-direction: row;
+}
+
+section#coisas5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.article-flex-box{
+    width: 22%;    
 }
