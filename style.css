@@ -1,3 +1,4 @@
+/* Configurações globais de estilização */
 :root {
     --cor-fundo-primaria: #282a36;
     --cor-fundo-secundaria: #44475a; 
@@ -6,25 +7,45 @@
     --cor-terciaria: #bd93f9;
     --cor-quartenaria: #fcae11;
     --cor-texto-paragrafos: #ffffff;
+    --fonte-primaria: 'Times New Roman', serif;
+    --fonte-secundaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fonte-primaria)
 }
 
 body{
     background-color: #282a36;
-    margin: 25px 50px;
+    margin: 0 0px 25px 0px;
     text-align: justify;
 }
 
+article{
+    margin: 20px 50px;
+    border: 4px solid #ff5555;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+figure{
+    background-color: white;
+    text-align: center;
+}
+
+img{
+    width: 15vw;
+}
+
+/* Configurações globais de titulos, subtitulos e paragrafos */
 .titulo-da-pagina{
    color:#ff5555;
    line-height: 3;
    font-weight: bold;
    font-size: 24pt; 
    text-align: center;
+   font-family: var(--fonte-secundaria)
 }
 
 .titulo-de-artigo{
@@ -33,6 +54,7 @@ body{
     font-weight: bold;
     font-size: 22pt;
     text-align: center;
+    font-family: var(--fonte-secundaria)
 }
 
 .sub-titulo, #faq summary{
@@ -42,6 +64,7 @@ body{
     font-size: 20pt;
     font-style: italic;
     margin-bottom: 10px;
+    font-family: var(--fonte-secundaria)
 }
 
 .voltar-ao-inicio a{
@@ -51,44 +74,10 @@ body{
     font-size: 15pt; 
     justify-content: center;
     display: flex;
-}
-
-.menu-principal ul{
-    background-color: var(--cor-fundo-secundaria);
-    padding: 15px;
-    border-radius: 15px;
-    /* text-align: center; */
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.menu-principal a{
-    color: var(--cor-quartenaria);
-}
-
-.menu-principal li{
-    margin: 20px 10px;
-    /* display: inline; */
-}
-
-.caminhos:hover{
-    text-decoration: overline ;
-}
-
-.link-externo{
-    color: #fcae11;
-    line-height: 2;
-    font-weight: bold;
-    font-size: 10pt;
+    font-family: var(--fonte-secundaria)
 }
 
 .paragrafro-de-artigo{
-    background-color: #44475a;
-    padding: 20px;
-}
-
-p{
     background-color: #44475a;
     color: #6272a4;
     line-height: 1.5;
@@ -97,7 +86,44 @@ p{
 }
 
 .paragrafo-blockquote + p{
-    padding-top: 0px;   
+    background-color: #44475a;
+    color: #6272a4;
+    line-height: 1.5;
+    font-size: 15pt;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* Configurações do menu principal de navegação */
+
+.menu-principal ul{
+    background-color: var(--cor-fundo-secundaria);
+    padding: 0px;
+    border-radius: 0px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-principal a{
+    color: var(--cor-quartenaria);
+    font-family: var(--fonte-secundaria);
+    padding: 0 30px;
+    transition: background-color .40s, font-size .40s;
+}
+
+.menu-principal li{
+    display: flex;
+    line-height: 60px;
+}
+
+/* Estilização da seção de tags utilizadas */
+
+.link-externo{
+    color: #fcae11;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 10pt;
 }
 
 #tags-utlizadas p:first-of-type{
@@ -112,65 +138,54 @@ p{
     border-radius: 25px 0 25px 0;
 }
 
-figure{
-    background-color: white;
-    text-align: center;
-}
-
 #tags-utlizadas figure{
     background-color: transparent;
     margin: 20px 0px;
 }
 
-img{
-    width: 15vw;
-}
+/* Estilização dos links internos e externos*/
 
-article{
-    margin: 20px 0px;
-    border: 4px solid #ff5555;
-    padding: 20px;
-    border-radius: 25px;
+a:hover{
+    color: var(--cor-quartenaria);
+    font-weight: 700;
+    background-color: var(--cor-fundo-primaria);
+    font-size: 120%;
 }
 
 a:active{
     color:var(--cor-primaria);
 }
 
-a:hover{
-    text-decoration: overline;
-    color: var(--cor-quartenaria);
-    font-weight: 700;
-}
+/* Estilização pagina de flex-box*/
 
-section#coisas{
+section#flexbox{
     display: flex;
     flex-direction: row;
 }
 
-section#coisas2{
+section#flexbox2{
     display: flex;
     flex-direction: row-reverse;
 }
 
-section#coisas3{
+section#flexbox3{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section#coisas4{
+section#flexbox4{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 
-section#coisas-colunas{
+section#flexbox-colunas{
     display: flex;
     flex-direction: row;
 }
 
-section#coisas5{
+section#flexbox5{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,5 +193,8 @@ section#coisas5{
 }
 
 .article-flex-box{
-    width: 22%;    
+    width: 25%;    
 }
+
+
+
